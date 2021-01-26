@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
+import Navbar from 'react-bootstrap/Navbar';
+import Users from './components/Users';
+import addUser from './components/AddUser'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar bg='dark' expand='lg'>
+        <NavLink to='/'>
+          <img
+            src='https://hackernoon.com/hn-images/1*VeM-5lsAtrrJ4jXH96h5kg.png'
+            height='30'
+            className='d-inline-block align-top'
+            alt='React Redux logo'
+          />
+        </NavLink>
+        <NavLink to='/users'>Users</NavLink>
+        <NavLink to='/addUser'>Add user</NavLink>
+      </Navbar>
+      <Route path='/users' component={Users} />
+      <Route path='/addUser' component={addUser} />
+    </Router>
   );
 }
 
