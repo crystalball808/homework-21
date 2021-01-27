@@ -6,7 +6,7 @@ import addUser from './components/AddUser'
 function App() {
   return (
     <Router>
-      <Navbar bg='dark' expand='lg'>
+      <Navbar bg='dark' style={{justifyContent: 'space-between'}}>
         <NavLink to='/'>
           <img
             src='https://hackernoon.com/hn-images/1*VeM-5lsAtrrJ4jXH96h5kg.png'
@@ -17,6 +17,8 @@ function App() {
         </NavLink>
         <NavLink to='/users'>Users</NavLink>
         <NavLink to='/addUser'>Add user</NavLink>
+        <NavLink to='/tweets'>Tweets</NavLink>
+        <NavLink to='/addTweet'>Add tweet</NavLink>
       </Navbar>
       <Route path='/users' component={Users} />
       <Route path='/addUser' component={addUser} />

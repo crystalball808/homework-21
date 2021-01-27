@@ -7,15 +7,17 @@ import Col from 'react-bootstrap/Col'
 
 export default function User({ user }) {
   return (
-    <Card bg='primary' text='dark' style={{width:'20rem'}}>
+    <Card bg='primary' text='light' style={{width:'20rem',height:'10rem'}}>
       <Container>
         <Row>
           <Col>
             <Image src={user.avatar} roundedCircle style={{ width: 100 }} />
           </Col>
           <Col>
-            <Card.Title>{user.name}</Card.Title>
-            <p>{user.username}</p>
+            <Card.Header>{user.name}</Card.Header>
+            <Card.Body>
+            <Card.Title>{user.username}</Card.Title>
+            </Card.Body>
           </Col>
         </Row>
       </Container>

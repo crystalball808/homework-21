@@ -13,7 +13,7 @@ const Users = () => {
     
 
     return (
-        <div>
+        <div style={{display: 'flex',flexWrap:'wrap'}}>
             {users.map((user)=><div>
                 <User user={user} />
             </div>)}
