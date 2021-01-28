@@ -1,1 +1,2 @@
 [0127/103403.541:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[0128/113854.151:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\Roman\AppData\Local\Google\Chrome\User Data\Crashpad\reports\dbc0a467-a97f-406c-a823-96816f07d33a.dmp: Процесс не может получить доступ к файлу, так как этот файл занят другим процессом. (0x20)

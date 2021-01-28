@@ -1,27 +1,24 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
 import Card from 'react-bootstrap/Card'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
 
-export default function Tweet ({tweet}) {
-    const users = useSelector( state => state.users.users.data);
-    const user = users.find(user => user.id === tweet.userId)
+export default function Tweet ({tweet, user}) {
     return (
-        <Card style={{width:'30rem',height:'auto'}}>
+        <Card bg='dark' text='white' style={{width:'25rem',height:'auto'}}>
             <Container fluid>
                 <Row>
-                    <Col md={2}>
-                        <Image fluid roundedCircle src={user.avatar} style={{width: 100}} />
+                    <Col md={3}>
+                        <Image fluid roundedCircle src={user?.avatar}  />
                     </Col>
-                    <Col md={10}>
+                    <Col md={9}>
                         <Card.Title>
-                            {user.name}
+                            {user?.name}
                         </Card.Title>
                         <Card.Subtitle>
-                            {user.username}
+                            {user?.username}
                         </Card.Subtitle>
                     </Col>
                 </Row>

@@ -3,6 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Users from './components/Users';
 import addUser from './components/AddUser'
 import Tweets from './components/Tweets'
+import AddTweet from './components/AddTweet'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Route path='/users' component={Users} />
       <Route path='/addUser' component={addUser} />
       <Route path='/tweets' component={Tweets} />
+      <Route path='/addTweet' component={AddTweet} />
     </Router>
   );
 }
