@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Users from './components/Users';
 import addUser from './components/AddUser'
+import Tweets from './components/Tweets'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       </Navbar>
       <Route path='/users' component={Users} />
       <Route path='/addUser' component={addUser} />
+      <Route path='/tweets' component={Tweets} />
     </Router>
   );
 }

@@ -2,7 +2,7 @@ import { FETCH_USERS } from './types';
 
 const initialState = {
   users: {
-      data: []
+    data: [],
   },
 };
 
