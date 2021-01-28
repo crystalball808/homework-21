@@ -9,7 +9,7 @@ async function postUser (e) {
         username: '@' + e.target[1].value,
         avatar: e.target[2].value
     }
-    const response = await fetch('https://domer.tech:9999/users/',{
+    const response = await fetch('http://domer.tech:9999/users/',{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json;charset=utf-8'

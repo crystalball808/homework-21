@@ -11,7 +11,7 @@ const postTweet = async (e) => {
     content: e.target[1].value,
     image: e.target[2].value,
   };
-  const response = await fetch('https://domer.tech:9999/tweets/', {
+  const response = await fetch('http://domer.tech:9999/tweets/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json;charset=utf-8',
